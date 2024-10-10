@@ -17,7 +17,11 @@ def synth(a, b, c, d, question):
         row.remove(d)
         row.insert(1, d)
     #final confirmation
-    print(row, "added!")
+    print(row[0], "added!")
     #output
     row = ",".join(row)
     return row
+
+def compile(flashcard_list, flashcard_txt_doc):
+    for element in flashcard_list:
+        flashcard_txt_doc.write(element + "\n")
