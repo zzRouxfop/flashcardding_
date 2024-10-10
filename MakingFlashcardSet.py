@@ -1,3 +1,5 @@
+import random
+
 def synth(a, b, c, d, question):
     #making row
     row = [question, a, b, c, d]
@@ -19,5 +21,3 @@ def synth(a, b, c, d, question):
     #output
     row = ",".join(row)
     return row
-
-
