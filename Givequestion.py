@@ -1,5 +1,5 @@
 from Takequestion import *
-from MakingFlashcardSet_MainFrame import *
+
 question_file = open(file, "r")
 question_prompt=[]
 questions=[]

@@ -1,10 +1,11 @@
-import random
+from CommaManagement import *
 
 def synth(question, a, b, c, d): #synthesizes user input (question + 4 choices) into a flashcard
-    row = [question, a, b, c, d] 
+    InitialFlashcard = [question, a, b, c, d] 
+    FinalFlashcard = commaconverter(InitialFlashcard)
     print("question added!")
-    row = ",".join(row)
-    return row
+    FinalFlashcard = ",".join(FinalFlashcard)
+    return FinalFlashcard
 
 def compile(flashcard_list, flashcard_txt_doc):
     for element in flashcard_list:

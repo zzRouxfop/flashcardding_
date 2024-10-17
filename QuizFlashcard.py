@@ -1,4 +1,5 @@
 import random
+from CommaManagement import *
 
 def quizzing():
     f = str(input("which flashcard set would you like to open?: "))
@@ -8,7 +9,7 @@ def quizzing():
         score = 0 #learner's final score; only increases when he gets the question right
         for flashcard in file: #for every flashcard, it will be processed by the block of code under this line
             AnswerCounter = 0 #counter for the four choices
-            question = flashcard.split(",") 
+            question = khmerconverter(flashcard)
             question.pop(-1)
             #turns the flashcard into a list (question + 4 choices + newline character) and removes the newline character and slowly removes elements in the list
 
