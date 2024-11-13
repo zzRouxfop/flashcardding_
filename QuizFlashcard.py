@@ -26,7 +26,6 @@ def quizzing():
         for flashcard in file: #for every flashcard, it will be processed by the block of code under this line
             AnswerCounter = 0 #counter for the four choices
             question = khmerconverter(flashcard)
-            question.pop(-1)
             #turns the flashcard into a list (question + 4 choices + newline character) and removes the newline character and slowly removes elements in the list
 
             print("• " + question[0])

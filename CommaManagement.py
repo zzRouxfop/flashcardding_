@@ -33,5 +33,7 @@ def khmerconverter(flashcard):
         #goes thorugh every element in stringing and does the principle
 
         FinalFlashcard.append("".join(stringing))
+
+    FinalFlashcard.pop(-1) #remove newline
     return FinalFlashcard
     #adds processed element to the final flashcard and treats it as output
