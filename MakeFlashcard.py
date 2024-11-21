@@ -1,4 +1,5 @@
 from CommaManagement import *
+import os 
 
 def synth(question, a, b, c, d): #synthesizes user input (question + 4 choices) into a flashcard
     InitialFlashcard = [question, a, b, c, d] 
@@ -12,12 +13,11 @@ def compile(flashcard_list, flashcard_txt_doc):
         flashcard_txt_doc.write(element + ",\n") #compiles the flashcards into a set/flashcard deck
 
 def make_flashcard():
-    title = str(input("flashcard set title:"))
-    title = title.strip().lower()
+    title = 'flashdecks/' + str(input("flashcard set title:")).strip().lower() + '.txt'
     AllFlashcards = []
     #making title for flashcard, variable AllFlashcards is a list of the question (0th element), correct answer (1st element), and the other choices (rest of the list)
 
-    with open(title + ".txt", "w") as file:
+    with open(title, "w") as file:
         while True: 
             question = str(input("question: "))
             a = str(input("choice 1 (CORRECT ANSWER): "))
