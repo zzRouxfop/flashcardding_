@@ -1,1 +1,1 @@
-sampleឣ question,correctឣ answer,*,*,*,
+sample question,correct answer,*,*,*,
