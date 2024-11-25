@@ -78,6 +78,7 @@ def editflashcard():
                 listing = commaconverter(listing)
                 listing = ','.join(listing)
                 additions.append(listing)
+            #adding new stuff to flashcard
 
         elif inputting == 'n':
             pass
