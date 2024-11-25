@@ -1,6 +1,8 @@
 import os
 
-def printAllFlashdecks():
-    for filename in os.listdir('flashdecks'):
-        file_path = os.path.join('flashdecks', filename)
+def printAllFlashdecks(directory = 'flashdecks/'):
+    for filename in os.listdir(directory):
+        file_path = os.path.join(directory, filename)
+        #if filename == None or file_path == None:
+            #continue
         print(filename)

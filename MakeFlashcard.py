@@ -23,7 +23,7 @@ def make_flashcard():
 
     closeFlashcard_Captcha = ''
     for i in range(5):
-        closeFlashcard_Captcha += random.choice(string.ascii_lowercase + string.digits)
+        closeFlashcard_Captcha += random.choice(string.ascii_lowercase)
         # captcha thing so that the user doesn't get asked if they are finished with their flashdeck 
 
     with open(title, "w") as file:

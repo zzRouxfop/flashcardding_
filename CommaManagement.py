@@ -17,6 +17,7 @@ def commaconverter(row):
         FinalFlashcard.append("".join(stringing))
     return FinalFlashcard
     #adds processed element to the final flashcard and treats it as output
+    #inputs list and outputs string
 
 def khmerconverter(flashcard):
     InitialFlashcard = flashcard.split(",")
@@ -37,3 +38,4 @@ def khmerconverter(flashcard):
     FinalFlashcard.pop(-1) #remove newline
     return FinalFlashcard
     #adds processed element to the final flashcard and treats it as output
+    #inputs string and outputs newline

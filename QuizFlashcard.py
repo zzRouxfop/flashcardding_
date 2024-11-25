@@ -1,6 +1,7 @@
 import random
 from CommaManagement import *
 from filefinder import *
+import time
 
 def CheckAnswer(choices, correct_answer): #if answer is correct, returns true
     guess = int(input("answer [1/2/3/4]: "))
@@ -55,6 +56,7 @@ def quizzing():
         score = float(score)
         QuestionCounter = float(QuestionCounter)
         print(finalscore(score, QuestionCounter))
+
     except FileNotFoundError:
         print(f"{f} not found!")
 
